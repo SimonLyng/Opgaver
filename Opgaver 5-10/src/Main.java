@@ -1,4 +1,6 @@
 public class Main {
+    static ArrayList<Room> rooms;
+    static int numberOfLamps;
     public static void main(String[] args) {
        //1
         Driver d1 = new Driver("Simon", 21);
@@ -15,10 +17,21 @@ public class Main {
         Room r2 = new Room(4,1,2,1);
         Room r3 = new Room(4,3,4,2);
 
-        Building b1 = new Building(3,1,2,false);
+        rooms.add(room);
+        rooms.add(room1);
+        rooms.add(room2);
 
+        //2.I
+        Building building = new Building(rooms, 2, 2, true);
 
+        for(Room _room : rooms){
+            numberOfLamps += _room.getNumberOfLamps();
+        }
+        System.out.println("total number of lamps "+numberOfLamps);
 
+        //2.K
+        if(building.getNumberOfFloors() > building.getRooms().size()){
+            System.out.println("This is an odd building");
+        }
     }
-
 }
