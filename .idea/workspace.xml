@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf2de4f8-b57c-4034-b6d3-ed214444ba34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Opgaver 5-10/src/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Opgaver 14-10.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Opgaver 5-10/src/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/Opgaver 5-10/src/Building.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Opgaver 5-10/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Opgaver 5-10/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -66,5 +66,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
