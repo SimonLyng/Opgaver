@@ -1,0 +1,76 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Tournament<--KnockoutTournament
+Team*--Player
+Tournament*--Team
+Player*-- UI
+Main*--KnockoutTournament
+KnockoutTournament<-- Match
+Tournament<-- Match
+Main*-- UI
+
+class Player{
+- String playerName;
+ -Boolean isTeamLeader;
+ +void setPlayerName(String playerName)
+ +String getPlayerName()
+ +void setTeamLeader(Boolean teamLeader)
+
+}
+
+class Team{
+-List<String> teamName;
+-int teamID;
+-ArrayList<Player> team;
++Team(String teamName, int teamID, List<Player> team)
++String getTeamName()
++void setTeamName(String teamName)
++int getTeamID()
++void setTeamID(int teamID)
+ +List<Player> getTeam()
+ +void setTeam(ArrayList<Player> team)
+}
+
+abstract class Tournament {
+-String name;
+-int ID;
+-ArrayList<Team> teams; [16]
++Tournament(String name, int ID, ArrayList<Team> teams)
++ void TeamMatchups(ArrayList<Team> teams);
+ +void Deadline(int x)
+
+
+}
+
+class KnockoutTournament {
+Boolean isWinner;
+- void pairTeams(ArrayList <team>)
+-void pickWinner()
+}
+
+class UI {
++List<Player> playernameScan()
++ ArrayList<Team> teamnameScan()
+}
+
+class Main{
+
+static main(String[] args)
+ ui = new UI();
+ ui.playernameScan();
+ KnockoutTournament knockoutTournament = new KnockoutTournament();
+ knockoutTournament.Deadline(7);
+ knockoutTournament.TeamMatchups(();
+
+}
+
+class Match {
+  -Team team1;
+  -Team team2;
+ + public Match(Team team1, Team team2)
+ +void setDate()
+ -String getDate()
+
+}
+@enduml

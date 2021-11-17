@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/class-diagram
+object Player
+object Teams
+object Tournament
+object Deadline
+object UI
+object Schedule
+object Results
+object KnockoutTournament
+
+
+KnockoutTournament*--Tournament
+Teams*--Player
+Tournament*--Teams
+UI*--T
+
+
+@enduml
