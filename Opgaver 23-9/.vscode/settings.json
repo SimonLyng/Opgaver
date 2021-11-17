@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "TaskTwo",
+        "TaskThree",
+        "TaskOne",
+        "TaskFour",
+        "TaskFive",
+        "TaskSix"
+    ]
+}
